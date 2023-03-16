@@ -95,11 +95,11 @@ class DialPainter extends CustomPainter {
         case BaseUnit.millisecond:
           return 'ms.';
         case BaseUnit.second:
-          return 'sec.';
+          return 's.';
         case BaseUnit.minute:
-          return 'min.';
+          return 'dk.';
         case BaseUnit.hour:
-          return 'hr.';
+          return 'sa.';
       }
     }
 
@@ -107,13 +107,13 @@ class DialPainter extends CustomPainter {
     String getSecondaryUnitString() {
       switch (baseUnit) {
         case BaseUnit.millisecond:
-          return 's ';
+          return 'ms ';
         case BaseUnit.second:
-          return 'm ';
+          return 's ';
         case BaseUnit.minute:
-          return 'h ';
-        case BaseUnit.hour:
           return 'd ';
+        case BaseUnit.hour:
+          return 'sa ';
       }
     }
 
